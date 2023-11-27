@@ -10,9 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".AppStoreActivity"
-            android:label="@string/title_activity_app_store"
+            android:name=".AppStoreHomeActivity"
+            android:label="@string/title_activity_app_store_home"
             android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name=".AppStoreActivity"
+            android:label="@string/title_activity_app_store" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
