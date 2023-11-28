@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.Nullable;
@@ -47,12 +48,20 @@ public class PlaceholderFragment extends Fragment {
             @NonNull LayoutInflater inflater, ViewGroup container,
             Bundle savedInstanceState) {
         View root = inflater.inflate(R.layout.fragment_app_store_home_base, container, false);
-        final TextView textView = root.findViewById(R.id.section_label);
-        pageViewModel.getText().observe(this, new Observer<String>() {
+//        final TextView textView = root.findViewById(R.id.section_label);
+//        pageViewModel.getText().observe(this, new Observer<String>() {
+//            @Override
+//            public void onChanged(@Nullable String s) {
+//                textView.setText(s);
+//            }
+//        });
+        final ImageView backGroundImage=root.findViewById(R.id.imageViewBackground);
+        pageViewModel.getImageID().observe(this, new Observer<Integer>()
+        {
             @Override
-            public void onChanged(@Nullable String s) {
-                textView.setText(s);
-            }
+            public void onChanged(@Nullable Integer imageID) {
+                    backGroundImage.setImageResource(imageID);
+                }
         });
         return root;
     }
