@@ -7,19 +7,30 @@
 
     <fragment
         android:id="@+id/navigation_home"
-        android:name="com.example.experiment4.AppStoreHomeFragment"
-        android:label="@string/title_home"
+        android:name="com.example.experiment4.ui.home.AppStoreHomeFragment"
+        android:label="@string/home_page"
         tools:layout="@layout/fragment_app_store_home" />
 
     <fragment
-        android:id="@+id/navigation_dashboard"
+        android:id="@+id/navigation_application"
         android:name="com.example.experiment4.ui.dashboard.DashboardFragment"
-        android:label="@string/title_dashboard"
+        android:label="@string/application"
         tools:layout="@layout/fragment_dashboard" />
 
     <fragment
-        android:id="@+id/navigation_notifications"
+        android:id="@+id/navigation_explore"
         android:name="com.example.experiment4.ui.notifications.NotificationsFragment"
-        android:label="@string/title_notifications"
+        android:label="@string/explore"
+        tools:layout="@layout/fragment_notifications" />
+
+    <fragment
+        android:id="@+id/navigation_game"
+        android:name="com.example.experiment4.ui.notifications.NotificationsFragment"
+        android:label="@string/game"
+        tools:layout="@layout/fragment_notifications" />
+    <fragment
+        android:id="@+id/navigation_mine"
+        android:name="com.example.experiment4.ui.notifications.NotificationsFragment"
+        android:label="@string/mine"
         tools:layout="@layout/fragment_notifications" />
 </navigation>

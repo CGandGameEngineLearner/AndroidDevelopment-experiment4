@@ -1,7 +1,8 @@
-package com.example.experiment4;
+package com.example.experiment4.ui.home;
 
 import android.os.Bundle;
 
+import com.example.experiment4.R;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.snackbar.Snackbar;
 import com.google.android.material.tabs.TabLayout;
