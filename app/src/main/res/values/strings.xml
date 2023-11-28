@@ -12,4 +12,9 @@
     <string name="explore">探索</string>
     <string name="game">游戏</string>
     <string name="mine">我的</string>
+    <string name="recommend">推荐</string>
+    <string name="app_list">应用榜</string>
+    <string name="game_list">游戏榜</string>
+    <string name="classfiy">分类</string>
+
 </resources>

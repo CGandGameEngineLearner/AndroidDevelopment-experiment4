@@ -13,24 +13,24 @@
 
     <fragment
         android:id="@+id/navigation_application"
-        android:name="com.example.experiment4.ui.dashboard.DashboardFragment"
+        android:name="com.example.experiment4.ui.app.AppFragment"
         android:label="@string/application"
-        tools:layout="@layout/fragment_dashboard" />
+        tools:layout="@layout/app_fragment" />
 
     <fragment
         android:id="@+id/navigation_explore"
-        android:name="com.example.experiment4.ui.notifications.NotificationsFragment"
+        android:name="com.example.experiment4.ui.explore.ExploreFragment"
         android:label="@string/explore"
-        tools:layout="@layout/fragment_notifications" />
+        tools:layout="@layout/explore_fragment" />
 
     <fragment
         android:id="@+id/navigation_game"
-        android:name="com.example.experiment4.ui.notifications.NotificationsFragment"
+        android:name="com.example.experiment4.ui.game.GameFragment"
         android:label="@string/game"
-        tools:layout="@layout/fragment_notifications" />
+        tools:layout="@layout/game_fragment" />
     <fragment
         android:id="@+id/navigation_mine"
-        android:name="com.example.experiment4.ui.notifications.NotificationsFragment"
+        android:name="com.example.experiment4.ui.mine.MineFragment"
         android:label="@string/mine"
-        tools:layout="@layout/fragment_notifications" />
+        tools:layout="@layout/mine_fragment" />
 </navigation>

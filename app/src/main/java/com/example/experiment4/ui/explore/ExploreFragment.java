@@ -1,4 +1,4 @@
-package com.example.experiment4.ui.home.recommend;
+package com.example.experiment4.ui.explore;
 
 import androidx.lifecycle.ViewModelProviders;
 
@@ -14,24 +14,24 @@ import android.view.ViewGroup;
 
 import com.example.experiment4.R;
 
-public class RecommendFragment extends Fragment {
+public class ExploreFragment extends Fragment {
 
-    private RecommendViewModel mViewModel;
+    private ExploreViewModel mViewModel;
 
-    public static RecommendFragment newInstance() {
-        return new RecommendFragment();
+    public static ExploreFragment newInstance() {
+        return new ExploreFragment();
     }
 
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container,
                              @Nullable Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.recommend_fragment, container, false);
+        return inflater.inflate(R.layout.explore_fragment, container, false);
     }
 
     @Override
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
-        mViewModel = ViewModelProviders.of(this).get(RecommendViewModel.class);
+        mViewModel = ViewModelProviders.of(this).get(ExploreViewModel.class);
         // TODO: Use the ViewModel
     }
 

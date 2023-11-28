@@ -1,4 +1,4 @@
-package com.example.experiment4.ui.home.recommend;
+package com.example.experiment4.ui.game;
 
 import androidx.lifecycle.ViewModelProviders;
 
@@ -14,24 +14,24 @@ import android.view.ViewGroup;
 
 import com.example.experiment4.R;
 
-public class RecommendFragment extends Fragment {
+public class GameFragment extends Fragment {
 
-    private RecommendViewModel mViewModel;
+    private GameViewModel mViewModel;
 
-    public static RecommendFragment newInstance() {
-        return new RecommendFragment();
+    public static GameFragment newInstance() {
+        return new GameFragment();
     }
 
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container,
                              @Nullable Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.recommend_fragment, container, false);
+        return inflater.inflate(R.layout.game_fragment, container, false);
     }
 
     @Override
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
-        mViewModel = ViewModelProviders.of(this).get(RecommendViewModel.class);
+        mViewModel = ViewModelProviders.of(this).get(GameViewModel.class);
         // TODO: Use the ViewModel
     }
 
