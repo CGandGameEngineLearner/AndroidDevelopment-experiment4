@@ -20,6 +20,11 @@
             android:theme="@style/AppTheme.NoActionBar"/>
 
         <activity
+            android:name=".LoginSuccActivity"
+            android:label="@string/login_home"
+            android:theme="@style/AppTheme.NoActionBar"/>
+
+        <activity
             android:name=".RegisterActivity"
             android:label="@string/register_home"
             android:theme="@style/AppTheme.NoActionBar"/>
