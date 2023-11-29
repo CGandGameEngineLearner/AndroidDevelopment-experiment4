@@ -4,7 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".HomeActivity">
+    tools:context=".LoginSuccActivity"
+    >
+
+
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -12,18 +15,16 @@
 
 
         <TextView
-            android:id="@+id/home"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="30sp"
             android:background="#03A9F4"
-            android:textColor="@android:color/white"
             android:padding="10dp"
-            android:text="@string/home" />
-
+            android:text="@string/home"
+            android:textColor="@android:color/white"
+            android:textSize="30sp" />
 
         <ImageView
-            android:id="@+id/iv_logo"
+            android:id="@+id/user_avatar"
             android:layout_width="80dp"
             android:layout_height="80dp"
             android:layout_marginTop="100dp"
@@ -31,33 +32,28 @@
             android:src="@mipmap/portrait" />
 
         <TextView
-            android:id="@+id/et_username"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="220dp"
             android:textSize="25sp"
-            android:hint="@string/nickname"
+            android:text="张三"
             android:gravity="center" />
 
         <TextView
-            android:id="@+id/et_account"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="260dp"
             android:textSize="20sp"
-            android:hint="@string/userid"
+            android:text="zhangsan"
             android:gravity="center" />
 
-
         <LinearLayout
-            android:id="@+id/ll_login_and_register"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="360dp"
             android:layout_centerHorizontal="true">
 
             <Button
-                android:id="@+id/btn_login"
                 android:layout_width="80dp"
                 android:layout_height="50dp"
                 android:layout_marginLeft="70dp"
@@ -66,18 +62,15 @@
                 android:text="登录" />
 
             <Button
-                android:id="@+id/btn_register"
                 android:layout_width="80dp"
                 android:layout_height="50dp"
                 android:layout_marginLeft="120dp"
                 android:background="#03A9F4"
                 android:textColor="@android:color/white"
                 android:text="注册" />
+
         </LinearLayout>
 
-
-
     </RelativeLayout>
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>
