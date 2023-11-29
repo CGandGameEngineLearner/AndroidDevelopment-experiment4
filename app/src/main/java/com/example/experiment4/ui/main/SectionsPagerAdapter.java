@@ -17,7 +17,7 @@ import com.example.experiment4.R;
 public class SectionsPagerAdapter extends FragmentPagerAdapter {
 
     @StringRes
-    private static final int[] TAB_TITLES = new int[]{R.string.recommend, R.string.app_list,R.string.game_list,R.string.classfiy};
+    private static final int[] TAB_TITLES = new int[]{R.string.recommend, R.string.app_list,R.string.game_list,R.string.classify};
     private final Context mContext;
 
     public SectionsPagerAdapter(Context context, FragmentManager fm) {
