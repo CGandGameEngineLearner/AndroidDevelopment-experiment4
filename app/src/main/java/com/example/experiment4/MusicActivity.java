@@ -125,6 +125,9 @@ public class MusicActivity extends AppCompatActivity {
 
     private void loadMusicAsset()
     {
+        // 在这里自定义你想要添加的歌
+        // 歌曲音频文件放到res/raw目录下，没有这个目录就创建个
+        // 按这个格式依葫芦画瓢自定义你自己想要的歌曲
         MusicBean[] musicBeans={
                 new MusicBean("说好不哭",R.raw.shuo_hao_bu_ku,"周杰伦","歌词"),
                 new MusicBean("moos",R.raw.moss,"歌手","歌词")
