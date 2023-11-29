@@ -8,44 +8,44 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 
-public class MainActivity extends AppCompatActivity {
+public class HomeActivity extends AppCompatActivity {
 
+    protected Button[] mButtons=new Button[2];
 
-    protected Button[] mButtons=new Button[4];
+    protected void initButtons() {
 
+        mButtons[0]=findViewById(R.id.btn_login);
 
-    protected void initButtons()
-    {
-
-        mButtons[0]=findViewById(R.id.button_0);
         mButtons[0].setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intentConsult = new Intent(MainActivity.this,AppStoreActivity.class);
-                startActivity(intentConsult);
-                Log.d("MainActivity","AppStoreActivity");
+                Intent intentHome = new Intent(HomeActivity.this,LoginActivity.class);
+                startActivity(intentHome);
+                Log.d("HomeActivity","LoginActivity");
             }
         });
 
-        mButtons[1]=findViewById(R.id.button_1);
+        mButtons[1]=findViewById(R.id.btn_register);
         mButtons[1].setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intentHome = new Intent(MainActivity.this,com.example.experiment4.HomeActivity.class);
+                Intent intentHome = new Intent(HomeActivity.this,RegisterActivity.class);
                 startActivity(intentHome);
-                Log.d("MainActivity","HomeActivity");
+                Log.d("MainActivity","RegisterActivity");
             }
-            });
+        });
+
+
+    }
 
 
 
-        }
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_home);
         initButtons();
     }
 }
