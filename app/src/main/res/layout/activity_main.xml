@@ -22,13 +22,7 @@
             android:id="@+id/button_2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="三星堆新闻" />
-
-        <Button
-            android:id="@+id/button_3"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="博物馆咨询" />
+            android:text="音乐播放器" />
 
     </LinearLayout>
 </layout>

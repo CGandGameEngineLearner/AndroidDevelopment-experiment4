@@ -5,5 +5,33 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.example.experiment4.MusicDetailActivity">
-
+<LinearLayout
+    android:orientation="vertical"
+    app:layout_constraintTop_toTopOf="parent"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/textViewMusicView"
+        android:layout_gravity="center"
+        android:text="音乐名"
+        android:textSize="30sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/textViewSingerName"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:text="音乐作者"
+        android:textSize="30sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/textViewLyric"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:text="歌词"
+        android:textSize="30sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+</LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -16,14 +16,15 @@
 
         <activity
             android:name=".LoginActivity"
-            android:label="@string/login_home"
-            android:theme="@style/AppTheme.NoActionBar"/>
+            android:label="@string/login_home" />
 
         <activity
             android:name=".RegisterActivity"
             android:label="@string/register_home"
             android:theme="@style/AppTheme.NoActionBar"/>
-
+        <activity
+            android:name=".MusicActivity"
+            android:label="@string/music_player" />
 
         <activity
             android:name=".HomeActivity"

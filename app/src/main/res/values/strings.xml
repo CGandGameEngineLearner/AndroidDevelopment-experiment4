@@ -21,5 +21,10 @@
     <string name="home">首页</string>
     <string name="login_home">登录主页</string>
     <string name="register_home">注册主页</string>
+    <string name="music_play">播放</string>
+    <string name="pause">暂停</string>
+    <string name="stop">停止</string>
+    <string name="next_music">下一首</string>
+    <string name="music_player">音乐播放器</string>
 
 </resources>

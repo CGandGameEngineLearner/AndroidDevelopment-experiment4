@@ -22,21 +22,25 @@
         android:layout_height="wrap_content">
         <Button
             android:id="@+id/buttonPlay"
+            android:text="@string/music_play"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
         </Button>
         <Button
             android:id="@+id/buttonPause"
+            android:text="@string/pause"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
         </Button>
         <Button
             android:id="@+id/buttonStop"
+            android:text="@string/stop"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
         </Button>
         <Button
             android:id="@+id/buttonNext"
+            android:text="@string/next_music"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
         </Button>
