@@ -11,7 +11,7 @@ import android.widget.Button;
 public class MainActivity extends AppCompatActivity {
 
 
-    protected Button[] mButtons=new Button[4];
+    protected Button[] mButtons=new Button[3];
 
 
     protected void initButtons()
@@ -35,11 +35,19 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intentHome);
                 Log.d("MainActivity","HomeActivity");
             }
-            });
+        });
 
+        mButtons[2]=findViewById(R.id.button_2);
+        mButtons[2].setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intentMusic = new Intent(MainActivity.this,MusicActivity.class);
+                startActivity(intentMusic);
+                Log.d("MainActivity","MusicActivity");
+            }
+        });
 
-
-        }
+    }
 
 
     @Override
