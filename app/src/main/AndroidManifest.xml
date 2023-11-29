@@ -25,6 +25,9 @@
         <activity
             android:name=".MusicActivity"
             android:label="@string/music_player" />
+        <activity
+            android:name=".MusicDetailActivity"
+            android:label="@string/music_detail" />
 
         <activity
             android:name=".HomeActivity"
