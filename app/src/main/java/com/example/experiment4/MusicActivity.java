@@ -126,8 +126,8 @@ public class MusicActivity extends AppCompatActivity {
     private void loadMusicAsset()
     {
         MusicBean[] musicBeans={
-                new MusicBean("moos",R.raw.moss,"歌手","歌词"),
-                new MusicBean("说好不哭",R.raw.shuo_hao_bu_ku,"周杰伦","歌词")
+                new MusicBean("说好不哭",R.raw.shuo_hao_bu_ku,"周杰伦","歌词"),
+                new MusicBean("moos",R.raw.moss,"歌手","歌词")
         };
         for(MusicBean musicBean:musicBeans)
         {
