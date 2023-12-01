@@ -33,6 +33,10 @@
             android:label="@string/music_player"/>
 
         <activity
+            android:name=".RegisterSuccActivity"
+            android:label="@string/register_home"/>
+
+        <activity
             android:name=".MusicDetailActivity"
             android:label="@string/music_detail"/>
         <activity
